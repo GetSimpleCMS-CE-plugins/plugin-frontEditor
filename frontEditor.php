@@ -32,7 +32,7 @@ function frontEdit(){
 			<form method="post" id="contentSaver">
 				<textarea class="content-input" name="content" style="display:none"></textarea>
 			</form>
-		<style>{background-color:#339900;}</style>
+			
 			<script>
 			document.addEventListener("DOMContentLoaded", () => {
 				tinymce.init({
