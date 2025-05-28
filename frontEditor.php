@@ -110,9 +110,7 @@ function frontEdit(){
 		} else {
 			$content = $content;
 		}
-?>
 
-<?php
 		global $url;
 		$xmlFile = GSDATAPAGESPATH . $url . '.xml';
 
