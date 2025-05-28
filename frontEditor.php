@@ -27,7 +27,8 @@ function frontEdit(){
 		if (file_exists(GSUSERSPATH . $cookie_user_id . '.xml')) {
 			$content = '<script src="' . $SITEURL . 'plugins/frontEditor/tinymce/tinymce.min.js"></script>
 
-			<div contenteditable="true" id="editor" style="border:dashed 1px #ddd">' . $content . '</div>
+			<style>#editor:focus{margin:-10px; padding:10px; border:dashed 1px red!important}</style>
+			<div contenteditable="true" id="editor">' . $content . '</div>
 			
 			<form method="post" id="contentSaver">
 				<textarea class="content-input" name="content" style="display:none"></textarea>
